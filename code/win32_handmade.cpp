@@ -1,12 +1,10 @@
 #include <windows.h> // Windows definitions
 
 
-int __clrcall WinMain(  // Windows entrypoint
+int WINAPI wWinMain( // Updated to wide-char entrypoint
   HINSTANCE hInstance,
   HINSTANCE hPrevInstance,
-  LPSTR     lpCmdLine,
-  int       nShowCmd
-)
-{
-    return(0); 
-}
+  PWSTR    pCmdLine,
+  int      nShowCmd
+);
+
